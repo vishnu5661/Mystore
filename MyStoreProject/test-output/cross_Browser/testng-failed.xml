@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [cross_Browser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Edge_test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Edge_test(failed) -->
+  <test thread-count="5" parallel="tests" name="Firefox_test(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Firefox_test(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome_test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Chrome_test(failed) -->
+</suite> <!-- Failed suite [cross_Browser] -->
