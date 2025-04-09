@@ -24,7 +24,7 @@ public class BaseClass {
 	
 	public static Properties prop;
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<>();
-	
+	//comment from git repo.
 	@BeforeSuite(groups={"smoke","sanity","Regression"})
 	public void loadConfig() throws Exception {
 		ExtentManager.setExtent();
